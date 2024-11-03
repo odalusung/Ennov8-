@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <script src="https://kit.fontawesome.com/cc27f65909.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="application.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/3d_logo.png">
+</head>
+<body>
+
+    <!---------------------header------------------------->
+
+    <div id="header">
+        <div class="container">
+            <div class="navv">
+                <div class="nav-2">
+                    <a href="../../Ennov8-/"><img src="../images/OLOGO.png" class="logo"></a>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+               
+                <nav class="nav-bar">  
+                    <ul id="sidemenu">
+                        <li><a href="../../Ennov8-/">Home</a></li>
+
+
+                        <li class="dropdown">
+                            <a href="../About/">About <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-content">
+                                <li><a href="../Pre-Qualifications/">Pre-Qualifications</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../Team/">Our Team</a></li>
+                
+                        <!----
+                            <li class="dropdown">
+                            <a href="projects.html">Projects <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-content">
+                                <li><a href="projects.html">Projects 1</a></li>
+                                <li><a href="projects.html">Projects 2</a></li>
+                                <li><a href="projects.html">Projects 3</a></li>
+                            </ul>
+                        </li>
+                        
+                        -->
+                    
+                        <li><a href="../Services/">Services</a></li>
+                        <li><a href="../Careers/">Careers</a></li>
+
+                     
+                        <!--
+                          
+                          <li class="dropdown">
+                              <a href="../Careers/">Careers <i class="fa-solid fa-chevron-down"></i></a>
+                              <ul class="dropdown-content">
+                                  <li><a href="../Application/">Application Form</a></li>
+                              </ul>
+                          </li>
+                        
+                        -->
+                        
+                     
+
+                        <li><a href="../Contact/">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!---------APPLICATION FORM---------------->
+    <div id="contact">
+        <div class="container opacity">
+            <div class="row">
+               
+                <div class="contact-right ">
+
+                    <form id="applicationForm"  enctype="multipart/form-data">
+                        <h1 class="sub-title">Application Form</h1>
+                    
+                        <div>
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full_name" id="full-name" placeholder="Enter your full name" required>
+                        </div>
+                    
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                        </div>
+                    
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                    
+                        <div>
+                            <label for="linkedin">LinkedIn Profile</label>
+                            <input type="url" name="linkedin" id="linkedin" placeholder="http://">
+                        </div>
+                    
+                        <div>
+                            <label for="position">Applying for Position</label>
+                            <select name="position" id="position" required>
+                                <option value="" disabled selected>Select a position</option>
+                                <option value="Sr. / Mid Drainage Engineering">Sr. / Mid Drainage Engineering</option>
+                                <option value="Senior Traffic Engineer">Senior Traffic Engineer</option>
+                                <option value="Traffic Design Engineer">Traffic Design Engineer</option>
+                                <option value="Civil Engineering Intern">Civil Engineering Intern</option>
+                            </select>
+                        </div>
+                    
+                        <div>
+                            <label for="resume">Resume/CV</label>
+                            <input type="file" name="resume" id="resume" required>
+                        </div>
+                    
+                        <div>
+                            <label for="cover-letter">Cover Letter</label>
+                            <textarea name="cover_letter" id="cover-letter" rows="6" placeholder="Write your cover letter here"></textarea>
+                        </div>
+                    
+                        <div class="work-model-section">
+                            <label for="work-model">Preferred Work Model</label>
+                            <div class="radio-options">
+                                <label><input type="radio" name="work_model" value="On-site"> On-site</label>
+                                <label><input type="radio" name="work_model" value="Remote"> Remote</label>
+                                <label><input type="radio" name="work_model" value="Hybrid"> Hybrid</label>
+                                <label><input type="radio" name="work_model" value="Other"> Other</label>
+                            </div>
+                        </div>
+                    
+                        <div class="consent-section">
+                            <input type="checkbox" name="consent" id="consent" required>
+                            <label for="consent">I consent to the storage and processing of my personal data.</label>
+                        </div>
+                       
+                        <button type="submit" class="btn btn3">Submit Application</button>
+                        <div id="result-message"></div>
+                        <!-- Div to display success or error message -->
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------END SECTION------------------------->
+    <div class="end-section">
+        <div class="container">
+            <nav>
+                <img src="../images/elogo copy.png" class="logo">
+                <ul id="mmenu">
+                    <li><a href="../About/">About</a></li>
+                    <li><a href="../Services/">Services</a></li>
+                    <li><a href="../Team/">Our Team</a></li>
+                    <li><a href="../Pre-Qualifications/">Pre-Qualifications</a></li>
+                    <li><a href="../Contact/">Contact</a></li>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                 
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="copyright">Copyright 2024 Ennov8 Design Group, LLC</div>
+
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+    // Define the base URL for the server
+    const urlBase = 'http://52.91.194.147:8000/Application';
+
+    // Select the form by ID
+    const form = document.getElementById('applicationForm');  // Make sure your form's ID matches this
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent default form submission
+
+        // Capture form data
+        const formData = new FormData(this);
+
+        // Send the form data using fetch to the PHP file
+        fetch(`application.php`, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())  // Parse JSON response
+        .then(data => {
+            const resultMessage = document.getElementById('result-message');  // Ensure there's an element to display the result
+            if (data.status === 'success') {
+                resultMessage.textContent = data.message;
+                resultMessage.style.color = 'green';
+            } else {
+                resultMessage.textContent = data.message;
+                resultMessage.style.color = 'red';
+            }
+        })
+        .catch(error => {
+            const resultMessage = document.getElementById('result-message');
+            resultMessage.textContent = 'An error occurred while submitting the form.';
+            resultMessage.style.color = 'red';
+            console.error('Error:', error);
+        });
+    });
+});
+    </script>
+</body>
+</html>
