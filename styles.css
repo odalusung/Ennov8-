@@ -326,7 +326,7 @@ nav ul li a{
     border-radius: 5px;
 }
 .slist{
-    display: flex;
+    /* display: flex; */
     padding-bottom: 40px;
 
 }
@@ -459,7 +459,8 @@ nav ul li a{
 
 .end-img {
    position: relative;
-   background-image: url(images/bg4.png);
+   /**background-image: url(images/bg4.png); **/
+   background-color: #1a1d23;
    background-position: center;
    background-repeat: no-repeat; 
    width: 100%;
